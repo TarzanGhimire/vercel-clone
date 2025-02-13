@@ -5,13 +5,13 @@ const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
 const mime = require('mime-types');
 const Redis = require('ioredis');
 
-const publisher = new Redis('redis://default:aXNWGwhIZn83p9szq8KuCmf3cZG9Y8a1@redis-16577.c14.us-east-1-3.ec2.redns.redis-cloud.com:16577');
+const publisher = new Redis('redis link here');
 
 const s3Client = new S3Client({
     region: 'ap-south-1',
     credentials: {
-        accessKeyId: 'AKIAQ4NXQIBVVEUWDYZB',
-        secretAccessKey: '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'
+        accessKeyId: 'Access key here',
+        secretAccessKey: 'Secret key here'
     }
 });
 
