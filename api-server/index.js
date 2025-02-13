@@ -11,7 +11,7 @@ const PORT = 9000
 // Enable CORS for all routes
 app.use(cors());
 
-const subscriber = new Redis('redis://default:aXNWGwhIZn83p9szq8KuCmf3cZG9Y8a1@redis-16577.c14.us-east-1-3.ec2.redns.redis-cloud.com:16577')
+const subscriber = new Redis('redis link')
 
 const io = new Server({ cors: '*' })
 
@@ -27,8 +27,8 @@ io.listen(9002, () => console.log('Socket Server 9002'))
 const ecsClient = new ECSClient({
     region: 'ap-south-1',
     credentials: {
-        accessKeyId: 'AKIAQ4NXQIBVVEUWDYZB',
-        secretAccessKey: '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'
+        accessKeyId: 'access keu',
+        secretAccessKey: 'sec key'
     }
 })
 
